@@ -44,3 +44,41 @@ else if (comparacionDeNombres == 1) {
 } else {
   console.log("What?! You both have the same name?")
 }
+
+//BONUS 1
+
+let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim porttitor lacus nec laoreet. Vestibulum at viverra arcu, et gravida dolor. Sed eleifend nibh in eros rhoncus, sit amet dictum nulla venenatis. Nullam nec leo non ligula malesuada viverra eget sit amet nisl. Cras consequat et est quis vulputate. Ut eget lorem vel eros ultricies condimentum ut et ligula. Donec sit amet ante sed magna tempus eleifend. Proin vel sem at metus convallis tincidunt eget at leo.
+Etiam quis quam tristique, interdum est sed, condimentum tellus. Mauris porta id nisi vitae maximus. Praesent elementum leo quam, et cursus metus aliquet at. Fusce lectus ex, egestas ut magna id, pharetra iaculis neque. Suspendisse lacus tortor, ultrices sed fringilla eget, volutpat molestie magna. Phasellus elementum erat turpis, quis tempus velit feugiat eget. Maecenas tempus auctor lectus. Duis viverra non lacus ac pellentesque. Duis justo libero, porta vel imperdiet ac, porttitor eget massa. Mauris a auctor quam. Sed et purus interdum, posuere risus non, pharetra lacus. Fusce sed metus tincidunt, mollis mauris at, efficitur libero. Nam et tempus mi.
+Nam quis tortor elit. Etiam lacinia lacinia enim et rutrum. Cras diam magna, viverra id purus sed, tincidunt tincidunt massa. Vivamus ipsum sapien, convallis sit amet purus eget, imperdiet venenatis neque. Suspendisse ligula nibh, condimentum id vulputate nec, faucibus eget lacus. Proin eget faucibus velit, iaculis mollis ipsum. Aliquam eu ex dapibus, volutpat ipsum ac, facilisis felis.`
+
+console.log(longText.split(" ").length)
+console.log(longText.split("et").length)
+
+
+//BONUS 2
+
+let phraseToCheck = 'reconocer' 
+
+let palindromeOne = ''
+
+for(let i = 0; i < phraseToCheck.length; i++) {
+    palindromeOne = palindromeOne + phraseToCheck[i]
+    console.log(palindromeOne)
+  }
+
+  let palindromeTwo = ''
+
+for (let i = phraseToCheck.length - 1; i >= 0  ; i--) {
+  palindromeTwo = palindromeTwo + phraseToCheck[i]
+  console.log(palindromeTwo)
+}
+
+if (palindromeOne == palindromeTwo) {
+    console.log("IT'S A PALINDROME")
+} else {
+    console.log("IT'S NOT A PALINDROME")
+}
+
+
+
+
